@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Appearance">
+
+        <SwitchPreferenceCompat
+            app:key="darkMode"
+            app:title="Night Mode"
+            android:defaultValue="false" />
+
+
+    </PreferenceCategory>
+<PreferenceCategory android:title="Notifications">
+
+    <ListPreference
+        android:defaultValue="3"
+        android:dialogTitle="@string/remind_to_take_a_break"
+        android:entries="@array/pref_remind_me_to_take_a_break"
+        android:entryValues="@array/pref_duration"
+        android:key="@string/key_upload_quality"
+        android:summary="@string/remind_me"
+        android:title="@string/remind_me" />
+
+</PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:key="version_preference"
+            android:title="Version"
+            android:summary="1.0.0" />
+
+        <Preference
+            android:key="about_preference"
+            android:title="About Us" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

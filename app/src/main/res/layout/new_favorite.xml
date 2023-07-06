@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewFavorite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNewFavoriteCuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink" />
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/lottieNewFavorite"
+        android:layout_width="250sp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/favorite"
+        android:layout_marginLeft="70sp"/>
+
+
+    <EditText
+        android:id="@+id/NewFavoriteCuisineEditText"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="New Favorite Cuisine"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edit_background"
+        android:paddingStart="20sp"
+        android:padding="10sp"
+        android:layout_marginTop="50sp"/>
+
+    <Button
+        android:id="@+id/addNewFavoriteCuisineButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:onClick="addNewFavoriteCuisine"
+        android:backgroundTint="@color/pink"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        android:text="Add New Favorite Cuisine"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="120dp"/>
+    <Button
+        android:id="@+id/viewNewFavoriteCuisineButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="viewNewFavoriteCuisine"
+        android:backgroundTint="@color/pink"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        android:text="View Data"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="35sp"/>
+
+
+</LinearLayout>

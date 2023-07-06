@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CuisineList"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieCuisine"
+        android:layout_width="250sp"
+        android:layout_height="140dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/cuisine" />
+
+    <ListView
+        android:id="@+id/cuisines_list"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddNewCuisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/add"
+            android:onClick="addNewCuisine"
+            android:layout_marginLeft="340sp"
+            android:layout_marginBottom="15sp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

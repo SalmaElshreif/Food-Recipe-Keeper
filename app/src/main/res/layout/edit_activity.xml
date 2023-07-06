@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieUpdate"
+        android:layout_width="250sp"
+        android:layout_height="140dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/update"
+        android:layout_marginLeft="70sp"/>
+
+    <EditText
+        android:id="@+id/Edit_Cuisine_Name"
+        android:layout_width="300sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="16dp"
+        android:text="Name"
+        android:paddingStart="20sp"
+        android:textSize="25sp"
+        android:padding="10sp"
+        android:background="@drawable/edit_background"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/UpdateCuisineButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:onClick="UpdateCuisineBtn"
+        android:backgroundTint="@color/pink"
+        android:layout_gravity="center_horizontal"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="240sp"
+        android:background="@drawable/button_background"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
